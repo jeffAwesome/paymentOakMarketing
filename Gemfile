@@ -18,4 +18,5 @@ gem 'pony', '~> 1.11'
 
 
 # heroku stuff
+gem 'puma', '~> 2.9.2'
 gem 'rack-contrib'
