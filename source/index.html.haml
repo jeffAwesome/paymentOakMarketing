@@ -1,0 +1,105 @@
+%section#header
+  #black-bg
+    .row
+      .twelve.columns.centered
+        / Logo
+        %h1.fade1.logo
+          %img{:alt => "Logo", :src => "img/logo.png", :width => "200"}/
+        / Title
+        %h2.fade1
+          Collect Montly Medical Payments For Free!
+          %h2.fade2 The 21st Century is here... its now easy as 1.2.3 to join with our Cloud based Recurring Payment System.
+          / Button
+          %a.button.fade3{:href => "#footer"} GET NOTIFIED WHEN WE LAUNCH
+          .info-container.centered
+            %a.button.landlord.fade3{:href => "#landlord"} For Small Practices
+          / //info-container
+      / Image coming from the bottom
+/ END HEADER ###############################################
+#container.container
+  #cbp-so-scroller.cbp-so-scroller
+    / HERE IS THE DIV FOR SCROLLING EFFECT
+    / landlord
+    #landlord
+      %h3.center For Small Practices
+      / FIRST SECTION ###############################################
+      %section.cbp-so-section
+        .row
+          .seven.columns.cbp-so-side.cbp-so-side-left
+            / Title
+            %h3 Treat more patients, while offering new monthly payments.
+            / Content
+            %p Get more patients. Its that simple. And 100% free to you. Keep track of all payments including upcoming payments, late fees. All of your transactions in one place, available for easy viewing.
+          / Image from right
+          .five.columns.cbp-so-side-img.cbp-so-side-right
+            %img{:alt => "Seamless Integration", :src => "img/chart.png"}/
+      / END FIRST SECTION ###############################################
+      / SECOND SECTION ###############################################
+      %section.cbp-so-section
+        .row
+          .seven.columns.cbp-so-side.cbp-so-side-right{:style => "float:right;"}
+            / Title
+            %h3 Credit Checks
+            / Content
+            %p We've made it easier then ever to check the credit of all your future patients. With a single click of a button, you'll send out a request for a patient. Within minutes you'll have the results.
+          / Image from left
+          .five.columns.cbp-so-side-img.cbp-so-side-left
+            %img{:alt => "EXEMPLE", :src => "img/clipboard.png"}/
+      / END SECOND SECTION ###############################################
+      / TIRTH SECTION ###############################################
+      %section.cbp-so-section
+        .row
+          .seven.columns.cbp-so-side.cbp-so-side-left
+            / Title
+            %h3 Less Stress, More Freedom!
+            / Content
+            %p
+              Stop worrying about credit card processing, auto drafting, or credit checks. Let Payment Oak handle that whil you and your staff focus on the things that truly matter.
+          / Image from right
+          .five.columns.cbp-so-side-img.cbp-so-side-right
+            %img{:alt => "Less Stress, More Freedom", :src => "img/service1.png"}/
+      / END TIRTH SECTION ###############################################
+    / //landlord
+  / end of div scrolling effect
+  / SIGN UP SECTION ###############################################
+  %section#signup
+    .row
+      / Title
+      .seven.columns.centered
+        %h2 Sign up and you'll be able to be one of the first to use Payment Oak.
+        / Begin the Form
+        / Input of E-Mail
+        / Begin MailChimp Signup Form
+        #mc_embed_signup
+          %form#mc-embedded-subscribe-form.validate{:action => "http:////paymentoak.us9.list-manage.com/subscribe/post?u=a00b3b87126d6201157abf024&amp;id=00bb7e0872", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+            / End mc_embed_signup
+            .eight.columns
+              %input#mce-EMAIL.email{:name => "EMAIL", :placeholder => "email address", :required => "", :type => "email", :value => ""}/
+              / real people should not fill this in and expect good things - do not remove this or risk form bot signup
+            / eight columns
+            .four.columns
+              / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+              %div{:style => "position: absolute; left: -5000px;"}
+                %input{:name => "b_a00b3b87126d6201157abf024_00bb7e0872", :type => "text", :value => ""}/
+              %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+            / four columns
+            / End of the Form
+        / Text Promise we do not spam
+        .twelve.columns.centered
+          %p.spam Promise, we do not spam :)
+      / END SIGN UP SECTION ###############################################
+      / FOOTER SECTION ###############################################
+      %section#footer
+        .row
+          / Text from left
+          .seven.columns.pull_left
+            %p
+              © #{Date.today.year} Payment Oak Payments
+          / Social Icon : You can found how to use them on Fonts Folder / Metrize HOW TO
+          .five.columns.text-right.social
+            %a{:href => "#", :target => "_blank"}
+              %i.icon{"data-icon" => ""}
+            %a{:href => "#", :target => "_blank"}
+              %i.icon{"data-icon" => ""}
+      / END FOOTER SECTION ###############################################
+    / end of container
